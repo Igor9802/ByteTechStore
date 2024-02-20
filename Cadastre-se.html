@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./Cadastro.css">
+</head>
+<body>
+    <div class="login-container" id="login-form">
+        <h2 style="color: #333;">Login</h2>
+        <form action="seu_arquivo_de_autenticacao.php" method="post">
+            <input class="login-input" type="text" name="username" placeholder="Nome de usuário" required>
+            <input class="login-input" type="password" name="password" placeholder="Senha" required>
+            <button class="login-button" type="submit">Entrar</button>
+        </form>
+        <div class="login-options">
+            <a href="Cadastre-se.html" style="color: #333;">Esqueceu a senha?</a>
+            <span style="color: #333;">ou</span>
+            <a href="#" style="color: #333;" onclick="showRegisterForm()">Cadastrar</a>
+        </div>
+    </div>
+
+    <div class="login-container" id="register-form" style="display: none;">
+        <h2 style="color: #333;">Cadastrar</h2>
+        <form action="seu_arquivo_de_cadastro.php" method="post">
+            <input class="login-input" type="email" name="email" placeholder="E-mail" required>
+            <input class="login-input" type="text" name="username" placeholder="Nome de usuário" required>
+            <input class="login-input" type="password" name="password" placeholder="Senha (até 8 caracteres)" maxlength="8" required>
+            <input class="login-input" type="password" name="confirm_password" placeholder="Confirmar Senha" maxlength="8" required>
+            <button class="login-button" type="submit">Finalizar Cadastro</button>
+        </form>
+        <div class="login-options">
+            <a href="#" style="color: #333;" onclick="showLoginForm()">Já tem uma conta?</a>
+        </div>
+    </div>
+
+    <script>
+        function showRegisterForm() {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+        }
+
+        function showLoginForm() {
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

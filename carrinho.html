@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <style>
+        /* Estilos simples para melhorar a apresentação */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .produto {
+            margin-bottom: 10px;
+        }
+        .carrinho {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carrinho de Compras</h1>
+
+    <div class="produto">
+        <span>Placa de video RTX 3060[
+        </span>
+        <span>Preço: R$2099,99.00</span>
+        <button onclick="adicionarItem('Placa de video RTX 3060', 2099,99)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+        <span>Produto:Placa de video RX 6750 </span>
+        <span>Preço: R$2.249,99</span>
+        <button onclick="adicionarItem('Placa de video RX 6750', 2319,99)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+        <span>Produto: Placa de video RTX 3060</span>
+        <span>Preço: R$2.319,99</span>
+        <button onclick="adicionarItem('Placa de video RTX 3060', 2319,99)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul id="lista-carrinho">
+        </ul>
+        <p>Total a pagar: R$<span id="total-carrinho">0.00</span></p>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    </div>
+
+    <script>
+        let carrinho = [];
+        let total = 0;
+
+        function adicionarItem(nome, preco) {
+            carrinho.push({ nome, preco });
+            total += preco;
+            atualizarCarrinho();
+        }
+
+        function limparCarrinho() {
+            carrinho = [];
+            total = 0;
+            atualizarCarrinho();
+        }
+
+        function atualizarCarrinho() {
+            const listaCarrinho = document.getElementById("lista-carrinho");
+            const totalCarrinho = document.getElementById("total-carrinho");
+            listaCarrinho.innerHTML = "";
+            carrinho.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = `${item.nome} - Preço: R$${item.preco.toFixed(2)}`;
+                listaCarrinho.appendChild(li);
+            });
+            totalCarrinho.textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>

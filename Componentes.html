@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .hidden {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  .show {
+    display: block;
+    max-height: 1000px; 
+  }
+  .toggle-icons {
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px; 
+    padding-right: 20px; 
+  }
+  .icon-checkmark {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; 
+  }
+  .icon-paper {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+  .product-description {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px; 
+  }
+</style>
+</head>
+<body>
+  <p><strong>Placa de Vídeo RTX 3060 Asus Dual O12G V2 NVIDIA GeForce, 12GB GDDR6, LHR, DLSS, Ray Tracing - DUAL-RTX3060-O12G-V2:</strong></p>
+  <a href="Componentes.html"><img src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244899_gg.jpg" alt="Produto 1" width="300" height="300"></a>
+
+  <h2 class="toggle-icons" onclick="toggleInfo('product-description')"><span class="icon-paper">&#128196;</span>&nbsp; Descrição do Produto <span class="icon-checkmark">&#10003;</span></h2>
+  <div id="product-description" class="hidden product-description">
+    <p><strong>Placa de Vídeo Asus NVIDIA GeForce DUAL RTX3060 O12G V2</strong></p>
+    <p><strong>Desempenho com DUAL RTX 3060</strong></p>
+    <p>Tenha um desempenho para seu trabalho e gameplay com a Placa de Vídeo Asus NVIDIA GeForce DUAL RTX 3060 O12G V2, equipada com uma memória de 12GB GDDR6, Velocidade de Memória de 15 Gbps e Boost Clock de 1867 MHz em OC e de 1867 MHz no modo Jogo.</p>
+    <p><strong>NVIDIA Ampere Streaming Multiprocessors</strong></p>
+    <p>Base de construção para a GPU mais rápida e eficiente do mundo, o totalmente novo Ampere traz duas vezes a taxa de transferência FP32 e maior eficiência de energia.</p>
+    <p><strong>Ray Tracing o melhor desempenho</strong></p>
+    <p>O Núcleos RT de 2ª geração garante duas vezes a taxa de transferência de núcleos RT de 1ª geração, mais RT e sombreamento simultâneos para um nível totalmente novo de desempenho de ray tracing. Com Núcleos Tensor de 3ª geração, obtenha até o dobro do rendimento com dispersão estrutural e algoritmos de IA avançados, como DLSS. Agora com suporte para resolução de até 8K, esses núcleos oferecem um grande aumento no desempenho do jogo e recursos de IA totalmente novos.</p>
+    <p><strong>Design 2-slot e desempenho térmico</strong></p>
+    <p>Um layout de cobertura, dissipador de calor e tubo de calor cuidadosamente projetado permite que as duas ventoinhas Axial-tech aproveitem a ventilação do painel lateral do chassi e forneçam um desempenho térmico além do tamanho da placa.</p>
+    <p><strong>Backplate Protetor</strong></p>
+    <p>A PCB é reforçada por um backplate de alumínio que proporciona rigidez estrutural, ajudando a impedir a flexão e a proteger componentes e trilhas contra danos.</p>
+  </div>
+
+  <script>
+    function toggleInfo(elementId) {
+      var info = document.getElementById(elementId);
+      if (info.classList.contains("hidden")) {
+        info.classList.remove("hidden");
+        info.classList.add("show");
+      } else {
+        info.classList.remove("show");
+        info.classList.add("hidden");
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            text-align: left;
+            margin-left: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="toggle-icons" onclick="toggleInfo('technical-info')"><span class="icon-checkmark">&#10003;</span>&nbsp; Informações Técnicas <span class="icon-paper">&#128196;</span></h2>
+    <div id="technical-info" class="hidden product-description">
+        <p><strong>Características:</strong></p>
+        <p> - Marca: ASUS</p>
+        <p> - Modelo: Dual RTX 3060 O12G V2</p>
+        
+        <p><strong>Especificações:</strong></p>
+        <p><strong>GPU:</strong></p>
+        <p> - Engine: NVIDIA GeForce RTX 3060</p>
+        <p> - CUDA Core: 3584</p>
+        
+        <p><strong>Clock Engine:</strong></p>
+        <p> - Modo OC: 1867 MHz (Boost Clock)</p>
+        <p> - Modo Gaming: 1837 MHz (Boost Clock)</p>
+        
+        <p><strong>Memória:</strong></p>
+        <p> - Interface: 192-bit</p>
+        <p> - Capacidade: 12GB</p>
+        <p> - Tipo: GDDR6</p>
+        <p> - Clock: 15 Gbps</p>
+        
+        <p><strong>Interface:</strong></p>
+        <p> - PCIE 4.0</p>
+        <p> - Slot: 2-slot</p>
+        <p> - Refrigeração: Dual Fan</p>
+        <p> - Proteção Backplate</p>
+        <p> - Dimensões: 200 x 123 x 38 mm</p>
+        
+        <p><strong>Alimentação:</strong></p>
+        <p> - Conector: 1x 8-pin</p>
+        <p> - PSU recomendado: 650W (mínimo)</p>
+        
+        <p><strong>Portas de Vídeo:</strong></p>
+        <p> - 1x HDMI 2.1 (nativo)</p>
+        <p> - 3x DisplayPort 1.4a (nativo)</p>
+        <p> - HDCP 2.3</p>
+        
+        <p><strong>Exibição:</strong></p>
+        <p> - Resolução Máxima: 7680 x 4320</p>
+        <p> - Suporta até 4 displays</p>
+        
+        <p><strong>Recursos:</strong></p>
+        <p> - OpenGL 4.6</p>
+        <p> - DirectX 12 Ultimate</p>
+        <p> - Arquitetura NVIDIA AMPERE</p>
+        <p> - NVIDIA G-SYNC</p>
+        <p> - Ray Tracing</p>
+        <p> - DLSS Acceleration</p>
+        <p> - ASUS GPU Tweak II</p>
+        <p> - GeForce Game Ready Driver</p>
+        <p> - Studio Driver</p>
+        
+        <p><strong>Conteúdo da Embalagem:</strong></p>
+        <p> - Placa de Vídeo ASUS</p>
+        <p> - Guia do Usuário</p>
+        
+        <p><strong>Garantia:</strong> 12 meses de garantia</p>
+        <p><strong>Peso:</strong> 880 gramas (bruto com embalagem)</p>
+    </div>
+</body>
+</html>

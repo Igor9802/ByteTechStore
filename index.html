@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteTech Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+
+        nav li {
+            padding: 1em;
+        }
+
+        .produto {
+            margin: 1em;
+        }
+
+        .detalhes-produto {
+            text-align: center;
+            margin: 2em;
+        }
+
+        .detalhes-produto img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        form label,
+        form input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .header-display {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-display">
+            <div style="display: flex; align-items: center;">
+                <img src="logo.png" alt="Logo ByteTech Store" width="130" height="130">
+            </div>
+            <div>
+                <h1>ByteTech Store</h1>
+                <h2>Sua Loja Online de Produtos Variados</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="d-flex w-100">
+        <ul class="w-100">
+            <li><a class="btn btn-outline-dark" href="#componentes">Componentes</a></li>
+            <li><a class="btn btn-outline-dark" href="#perifericos">Periféricos</a></li>
+            <li><a class="btn btn-outline-dark" href="#notebooks">Notebooks</a></li>
+            <li><a class="btn btn-outline-dark" href="#smartphones">Smartphones</a></li>
+            <li class="ms-auto">
+                <a class="btn btn-primary" href="carrinho.html">Carrinho</a>
+                <a class="btn btn-primary" href="Cadastre-se.html">Cadastre-se</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Componentes</h2>
+        
+        <section id="componentes" class="p-3 row">
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="w-100" src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244899_gg.jpg" alt="Produto 1">
+                        <a href="rtx_3060.html">
+                            <p class="h4">Placa de Vídeo RTX 3060 Asus Dual O12G V2 NVIDIA GeForce</p>
+                        </a>
+                        <p class="fw-bold h4 mt-3 mb-0">R$ 2099,99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img  class="w-100" src="https://images.kabum.com.br/produtos/fotos/475438/placa-de-video-rx-6750-xt-mech-2x-12g-v1-radeon-12gb-gddr6-freesync-dual-fan_1689965385_gg.jpg"  alt="Produto 1">
+                        <a href="produto2.html">                    
+                            <h3>Placa de Vídeo RX 6750 XT MECH 2X 12G V1 Radeon</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img  class="w-100" src="https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_gg.jpg" alt="Produto 1">
+                        <a href="produto3.html">                    
+                            <h3>Placa de Video RTX 3060 Gaming OC Gigabyte GeForce</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        
+            <div class="produto">
+                <a href="produto4.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/150657/placa-de-video-galax-geforce-rtx-3060-1-click-oc-15-gbps-12gb-gddr6-ray-tracing-dlss-36nol7md1voc_1614253646_gg.jpg"alt="Produto4" width="300" height="300">
+                        <a href="produto4.html">
+                    <h3>Placa de Vídeo RTX 3060 1-Click OC Galax GeForce</h3>
+                </a>
+            </div>
+         <div  
+
+        </section>
+
+        <section id="perifericos">
+            <h2>Periféricos</h2>
+            <div class="produto">
+                <a href="Periféricos.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/114588/teclado-mecanico-gamer-husky-blizzard-rgb-switch-gateron-red-abnt2-rosa-tc-hbl-ro_1619467419_gg.jpg"
+                        alt="Produto 5" width="300" height="300">
+                    <h3>Teclado Mecânico Gamer Husky Gaming Blizzard, Rosa, 60%</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="periférico2.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/93160/93160_1523969683_index_gg.jpg"
+                        alt="periférico2" width="300" height="300">
+                    <h3>Teclado Mecânico Gamer Redragon Kumara</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="periferico3.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/152114/teclado-mecanico-gamer-t-dagger-bora-rgb-switch-outemu-mk-2-diy-vermelho-anti-ghosting-abnt2-preto-t-tgk315-rd-pt-red-_1641414778_gg.jpg"
+                        alt="Produto 1" width="300" height="300">
+                    <h3>Teclado Mecanico Gamer T-Dagger Bora RGB</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="periferico4.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/102433/teclado-mecanico-gamer-hyperx-alloy-origins-hx-kb6rdx-br_teclado-mecanico-gamer-hyperx-alloy-origins-hx-kb6rdx-br_1569421286_gg.jpg"
+                        alt="periferico4" width="300" height="300">
+                    <h3>Teclado Mecânico Gamer HyperX Alloy Origins, RGB</h3>
+                </a>
+            </div>
+
+        </section>
+
+        <section id="notebooks">
+            <h2>Notebooks</h2>
+            <div class="produto">
+                <a href="notebooks.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/356530/notebook-samsung-intel-core-i5-1135g7-8gb-ram-ssd-256gb-15-6-full-hd-windows-11-home-cinza-np550xda-kh2br_1655749555_gg.jpg"
+                        alt="notebooks" width="300" height="300">
+                    <h3>Notebook Samsung Book Intel Core i5</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="notebooks2.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/339504/notebook-gamer-acer-nitro-5-amd-ryzen-7-4800h-geforce-gtx-1650-8gb-ram-ssd-256gb-hdd-1tb-15-6-fhd-ips-144hz-windows-11-an515-44-r629_1652732334_gg.jpg"
+                        alt="notebooks2" width="300" height="300">
+                    <h3>Notebook Gamer Acer Nitro 5 AMD Ryzen 7</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="notebooks3.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/460938/notebook-lenovo-ultrafino-ideapad-1-ryzen-5-7520u-8gb-ram-ssd-256gb-amd-radeon-610m-integrado-15-6-hd-linux-cloud-grey-82x5s00100-6-linux-cloud-grey-82x5s00100_1686138932_gg.jpg"
+                        alt="Produto 1" width="300" height="300">
+                    <h3>Notebook Lenovo Ultrafino IdeaPad 1 Ryzen 5</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="notebooks4.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/393218/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-windows-11-prata-metalico-m1502ia-ej251w_1668697723_gg.jpg"
+                        alt="Produto 1" width="300" height="300">
+                    <h3>Notebook Asus Vivobook 15 AMD Ryzen 5</h3>
+                </a>
+            </div>
+
+
+        </section>
+
+        <section id="smartphones">
+            <h2>Smartphones</h2>
+            <div class="produto">
+                <a href="smartphones.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/435643/smartphone-samsung-galaxy-a54-5g-128gb-8gb-ram-octa-core-camera-tripla-de-50mp-tela-infinita-de-6-4-preto-sm-a546ezklzto_1678372969_gg.jpg"
+                        alt="Produto 13" width="300" height="300">
+                    <h3>Smartphone Samsung Galaxy A54, 5G</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="smartphone2.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/325681/smartphone-samsung-galaxy-s20-fe-5g-6gb-ram-128gb-octa-core-camera-tripla-32mp-tela-infinita-6-5-azul-marinho-sm-g781bzbrzto_1652122822_gg.jpg"
+                        alt="Produto 1" width="300" height="300">
+                    <h3>Smartphone Samsung Galaxy S20 FE, 5G</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="smartphone3.html">
+                    <img src="https://images.kabum.com.br/produtos/fotos/429414/smartphone-motorola-moto-g53-5g-128gb-4gb-ram-octa-core-camera-dupla-50mp-tela-de-6-5-rose-pawr0002br_1677608336_gg.jpg"
+                        alt="Produto 1" width="300" height="300">
+                    <h3>Smartphone Motorola Moto G53, 5G</h3>
+                </a>
+            </div>
+            <div class="produto">
+                <a href="smartphone4.html">
+                    <img src="https://a-static.mlcdn.com.br/800x560/apple-iphone-14-128gb-estelar-61-12mp-ios-5g/magazineluiza/237184100/b208242666e673bb1cfff75f61667947.jpg"
+                        alt="Produto 1" width="300" height="300">
+                    <h3>Apple iPhone 14 128GB Estelar </h3>
+                </a>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ByteTech Store. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
