@@ -36,7 +36,7 @@ body * {
 }
 
 .left-login-img {
-    width: 35vw;
+    width: 70%; /* Adjust the width as needed */
 }
 
 .right-login {
@@ -91,15 +91,15 @@ body * {
     color: #f0ffffde;
     margin-bottom: 10px;
 }
-    
+
 .textfield input::placeholder {
     color: #f0ffff94;
 }
 
-.btn-login {
+.btn-cadastro {
     width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
+    padding: 16px 0;
+    margin: 25px 0;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -110,6 +110,7 @@ body * {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+
 
 @media (max-width: 950px) {
     .card-login {
@@ -137,7 +138,7 @@ body * {
     }
 
     .left-login-img {
-        width: 50vw;
+        width: 50%;
     }
 
     .card-login {
